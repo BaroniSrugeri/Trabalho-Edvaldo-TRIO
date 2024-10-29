@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Compras PWA</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="principal">
-      <h1>Lista de Compras</h1>
-      <label for="item">Selecione um item:</label>
-      <select id="item">
-        <option value="arroz">Arroz</option>
-        <option value="feijão">Feijão</option>
-        <option value="sabão">Sabão</option>
-        <option value="detergente">Detergente</option>
-        <option value="pano de prato">Pano de Prato</option>
-      </select>
-      <button id="adicionar">Adicionar</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Compras PWA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="principal">
+    <h1>Lista de Compras</h1>
+    <label for="item">Selecione um item:</label>
+    <select id="item">
+      <option value="arroz">Arroz</option>
+      <option value="feijão">Feijão</option>
+      <option value="sabão">Sabão</option>
+      <option value="detergente">Detergente</option>
+      <option value="pano de prato">Pano de Prato</option>
+    </select>
+    <button id="adicionar">Adicionar</button>
+    <div class="outro-prod">
+      <input type="text" id="texto" placeholder="Queijo, molho...">
+      <button id="adicionar-prod">Adicionar outro produto</button>
     </div>
-    <div class="itens">
-      <h2>Itens Selecionados:</h2>
-      <ul id="lista-compras"></ul>
-    </div>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <div class="itens">
+    <h2>Itens Selecionados:</h2>
+    <ul id="lista-compras"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
