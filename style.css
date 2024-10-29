@@ -3,12 +3,17 @@
 body {
     font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
     margin-left: 40%;
+    background-color: azure;
 }
-.principal h1{
-    color: black;
+header{
+    background-color:rgb(50, 150, 153) ;
 }
-.principal{
-    background-color: cadetblue;
+.principal h1 {
+    color: rgb(28, 58, 45);
+}
+
+.principal {
+    background-color: rgb(50, 150, 153);
     border-radius: 15px;
     padding: 20px;
     width: 400px;
@@ -16,18 +21,31 @@ body {
     margin-bottom: 40px;
     margin-top: 40px;
 }
-select, button{
+
+select,
+button {
     border-radius: 10px;
+}
+#item{
+    width: 300px;
     height: 30px;
 }
-#adicionar{
-    width: 100px;
-    background-color: azure;
+option {
+    align-items: center;
 }
-#adicionar:hover{
+
+#adicionar {
+    width: 150px;
+    height: 30px;
+    background-color: azure;
+    margin-top: 15px;
+}
+
+#adicionar:hover {
     background-color: white;
 }
-.itens{
+
+.itens {
     background-color: gray;
     border-radius: 15px;
     padding: 20px;
@@ -36,12 +54,40 @@ select, button{
     margin-bottom: 40px;
     margin-top: 40px;
 }
-.itens ul{
+
+.itens ul {
     background-color: white;
     border-radius: 10px;
 }
+
+button {
+    width: 150px;
+}
+#adicionar-prod{
+    margin-top: 20px;
+}
+.outro-prod button{
+    height: 25px;
+    font-size: 11px;
+    margin-top: 10px;
+    width: 125px;
+    background-color: rgb(170, 252, 255);
+    padding: 1px;
+}
+
+.outro-prod input{
+    height: 25px;
+    font-size: 11px;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
     body{
-        
+        margin: 40px;
+    }
+    .principal, .itens{
+        width: 300px;
     }
 }
