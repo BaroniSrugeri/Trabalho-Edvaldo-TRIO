@@ -24,3 +24,11 @@ document.getElementById('adicionar-prod').addEventListener('click', function () 
         alert('Por favor, digite um valor.');
     }
 });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js') .
+    then(() => {
+    console.log('Service Worker registrado com sucesso'); })
+    .catch((error) => {
+    console.log('Falha ao registrar o Service Worker:', error); });
+}
